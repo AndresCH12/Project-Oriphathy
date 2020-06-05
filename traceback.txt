@@ -1,0 +1,63 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While processing the color property of anonymous style:
+  File "game/script.rpy", line 28, in script
+    a "Next patient Please"
+ValueError: invalid literal for int() with base 16: 'g'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 28, in script
+    a "Next patient Please"
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\ast.py", line 708, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\exports.py", line 1345, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\character.py", line 1142, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\character.py", line 842, in do_display
+    **display_args)
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\character.py", line 591, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\ui.py", line 297, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 3094, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\screen.py", line 434, in visit_all
+    self.child.visit_all(callback, seen=None)
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 543, in visit_all
+    callback(self)
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 3094, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\text\text.py", line 1636, in per_interact
+    if self.style.slow_abortable:
+  File "gen/styleclass.pxi", line 757, in renpy.styledata.styleclass.Style.slow_abortable.__get__
+  File "style.pyx", line 493, in renpy.style.StyleCore._get
+  File "style.pyx", line 709, in renpy.style.build_style
+  File "style.pyx", line 706, in renpy.style.build_style
+  File "gen/style_functions.pyx", line 757, in style_functions.color_property
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\color.py", line 153, in __new__
+    r = int(c[0], 16) * 0x11
+ValueError: invalid literal for int() with base 16: 'g'
+
+Windows-8-6.2.9200
+Ren'Py 7.3.5.606
+Project Oriphathy 1.0
+Fri Jun 05 14:46:45 2020
