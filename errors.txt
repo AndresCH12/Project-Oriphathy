@@ -2,13 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 22: end of line expected.
-    scene bg Clinic.jpg
-                   ^
+File "game/script.rpy", line 55: expected statement.
+    name = renpy.input("What is your name") or "Protag"
+         ^
 
-File "game/script.rpy", line 28: end of line expected.
-    show a Doctor.jpg
-                 ^
+File "game/script.rpy", line 57: expected statement.
+    gender = renpy.input("Enter your gender") or "male"
+           ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sat Jun 06 14:03:43 2020
+Sun Jun 07 12:16:36 2020
