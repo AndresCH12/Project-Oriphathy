@@ -333,18 +333,85 @@ label start:
 
     f "Hey! How did it go?"
 
-    "I turned around and saw three people waiting for me outside."
+    "I turned around and saw three people."
 
-    show chris happy at left
+    show chris happy
     with dissolve
 
-    show bob normal
+    show bob normal at left
     with dissolve
 
     show alice neutral at right
     with dissolve
+    pause
+    hide Chris happy
+    with dissolve
+    hide bob normal
+    with dissolve
+    hide alice neutral
+    with dissolve
+
+    show alice neutral
 
     g "What did the doctor say? Was is serious?"
+
+    b "No, it wasn't serious."
+
+    hide alice neutral
+    show chris happy
+    c "That's a relief. Glad it wasn't serious."
+    hide chris happy
+    show bob cheer
+    d "Alright! Let's go get something to eat!"
+
+    hide bob cheer
+    show chris normal
+    c "Well, it is Bob's turn to foot the bill."
+
+    hide chris normal
+    show alice neutral
+    g "Anything you want to eat in particular, Protag?"
+
+    b "No, not really."
+
+    hide alice neutral
+    show bob cheer
+
+    d "In that case, it's ramen! Ramen!"
+
+    hide bob cheer
+    show alice angry
+
+    g "Again? Don't you ever get bored of eating the same thing over and over?"
+
+    hide alice angry
+    show bob yikes
+
+    d "Hey! No one insults the ramen. Plus, today is black garlic ramen day. It's not the same as last time."
+
+    hide bob yikes
+    show alice angry
+
+    g "..."
+
+    hide alice angry with dissolve
+    show chris neutral
+
+    c "Yes, yes. All hail the bowl. Come on, let's get moving before it gets crowded."
+
+    hide chris neutral with dissolve
+
+    "And just like that, another peaceful day passes by without incident. But so long as we are considered Infected, how long will this bit of happiness last?"
+
+    show bob normal
+
+    d "Hey, [name]! Hurry up or we'll leave you behind!"
+
+    hide bob normal with dissolve
+
+    b "Yes, yes. I'm coming, I'm coming."
+
+    "...Maybe it won't be so bad, being an Infected."
 
     pause
 
