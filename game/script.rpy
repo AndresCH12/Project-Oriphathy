@@ -19,8 +19,9 @@ define i = Character ("Viginalte 2")
 define j = Character ("Vigilante 3")
 define k = Character ("Reunion Soldier")
 define l = Character ("Rhodes Island Operator")
-define m = Character ("Ursus Guard")
-
+define m = Character ("Ursus Guard 1")
+define n = Character ("Infected person")
+define o = Character ("Ursus Guard 2") 
 label start:
 
     scene clinic
