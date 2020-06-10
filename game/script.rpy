@@ -14,6 +14,12 @@ image mperson = im.Scale("Hellagur.png", 700, 700)
 image clinic = im.Scale("dark_light_clinic.jpg", 1368, 720)
 define f = Character ("???")
 define g = Character ("Alice")
+define h = Character ("Vigilante 1")
+define i = Character ("Viginalte 2")
+define j = Character ("Vigilante 3")
+define k = Character ("Reunion Soldier")
+define l = Character ("Rhodes Island Operator")
+define m = Character ("Ursus Guard")
 
 label start:
 
@@ -344,7 +350,8 @@ label start:
     show alice neutral at right
     with dissolve
     pause
-    hide Chris happy
+
+    hide chris happy
     with dissolve
     hide bob normal
     with dissolve
@@ -413,6 +420,4 @@ label start:
 
     "...Maybe it won't be so bad, being an Infected."
 
-    pause
-
-    return
+    jump destruction_start:
