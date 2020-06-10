@@ -2,7 +2,7 @@ label destruction_start:
 
     "Before the Destruction"
 
-    scene Warehouse
+    scene warehouse
     with fade
 
     show alice neutral
@@ -20,7 +20,7 @@ label destruction_start:
     g "Ah, sorry. I was just thinking."
 
     hide alice neutral
-    show chirs neutral
+    show chris neutral
 
     c "Hmm. I... don't really like this."
 
@@ -46,13 +46,15 @@ label destruction_start:
 
     d "In this case, it may be. Something about the air doesn't sit well with me."
 
+    hide bob yikes
+    scene Catastrophe
+
     "The Catastrophe."
     "Nicknamed as such to refer to various natural disasters occuring around the world."
     "It is believed that Catastrophes occur whenever Originium is found, almost as if they are connected."
     "Because these Catastrophes are unpredictable, certain technologies were created to adapt to such a situation."
     "For example, moving cities and attempts to predict these Catastrophes."
 
-    hide bob yikes
     b "And you think the Catastrophe is going to happen here?"
 
     show chris neutral
@@ -317,6 +319,7 @@ label destruction_start:
 
     h "Oh? Who do we have here? Hey, didn't your ma and pa taught you to never play with fire?"
 
+    hide Vigilante
     show rs
 
     k "..."

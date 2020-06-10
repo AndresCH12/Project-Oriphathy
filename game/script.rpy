@@ -9,9 +9,17 @@ define b = Character("[name]")
 define c = Character("Chris")
 define d = Character("Bob")
 define e = Character("Nurse")
+image alice neutral = im.Scale("alice neutral.png", 600, 700)
+image alice angry = im.Scale("alice angry.png", 600, 700)
+image alice cheer = im.Scale("alice cheer.png", 600, 700)
+image alice soft = im.Scale("alice soft.png", 600, 700)
 image doctor = im.Scale("Doctor.png", 700, 700)
 image mperson = im.Scale("Hellagur.png", 700, 700)
 image clinic = im.Scale("dark_light_clinic.jpg", 1368, 720)
+image warehouse = im.Scale("Warehouse.jpg", 1368, 720)
+image dark alley = im.Scale("Dark alley.jpg", 1368, 720)
+image Vigilante = im.Scale("Vigilante.png", 700, 700)
+image rs = im.Scale("rs.png", 700, 700)
 define f = Character ("???")
 define g = Character ("Alice")
 define h = Character ("Vigilante 1")
@@ -21,7 +29,7 @@ define k = Character ("Reunion Soldier")
 define l = Character ("Rhodes Island Operator")
 define m = Character ("Ursus Guard 1")
 define n = Character ("Infected person")
-define o = Character ("Ursus Guard 2") 
+define o = Character ("Ursus Guard 2")
 label start:
 
     scene clinic
@@ -421,4 +429,4 @@ label start:
 
     "...Maybe it won't be so bad, being an Infected."
 
-    jump destruction_start:
+    jump destruction_start

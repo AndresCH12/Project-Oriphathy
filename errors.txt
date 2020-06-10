@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/destruction.rpy", line 32: expected statement.
-    b 
-      ^
+File "game/script.rpy", line 424: end of line expected.
+    jump destruction_start:
+                          ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed Jun 10 09:17:37 2020
+Wed Jun 10 16:21:55 2020
