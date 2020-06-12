@@ -14,3 +14,4 @@ A visual novel, often abbreviated as VN, is an interactive literary genre, which
 
 (in process of building)
 
+Note that much of the work is actually done on newbranch. Check newbranch for updated content.
