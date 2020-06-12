@@ -106,22 +106,6 @@ label start:
         if not name:
             name = "Protag"
 
-    python:
-        age = renpy.input("What is your age?")
-        age = age.strip()
-
-        if not age:
-            age = "22"
-
-    python:
-        gender = renpy.input("What is your gender?")
-        gender = gender.strip()
-
-        if not gender:
-            gender = "male"
-
-
-
     a "Next patient, please."
 
     b "Yes!"

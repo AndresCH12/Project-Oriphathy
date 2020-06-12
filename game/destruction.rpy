@@ -542,66 +542,73 @@ label destruction_start:
 
     g "Say. If they really do call themselves Reunion. If they really are the same as the movement and not simply using their name..."
 
-    #label current_dilema1:
-    #menu:
-    #    "Do you think what they are doing is right?":
-    #        b "Yes."
-    #        b "Reunion's voices fell to deaf ears, so this is the natural outcome."
-#
-#            g "...I suppose you're right. When words fail, action becomes the norm."
-#        else:
-#            b "No.":
-#                "Violence will always lead to more violence."
-#
-#            g "...I suppose you're right. Even if our voices can't be heard, we simply have to keep trying."
+label current_dilema1:
+    menu:
+        "Do you think what they are doing is right?":
+            b "Yes."
+            b "Reunion's voices fell to deaf ears, so this is the natural outcome."
 
-#    g "But even so, this is just too cruel."
+            g "...I suppose you're right. When words fail, action becomes the norm."
+        else:
+            b "No.":
+                "Violence will always lead to more violence."
 
-#    b "Unfortunately, this is who we are. At the end of the day, violence is a universal language."
+            g "...I suppose you're right. Even if our voices can't be heard, we simply have to keep trying."
+            g "But even so, this is just too cruel."
 
-#    hide alice soft
-#    show alice angry
+    b "Unfortunately, this is who we are. At the end of the day, violence is a universal language."
 
-#    g "..."
+    hide alice soft
+    show alice angry
 
-#    hide alice angry
-#    show alice soft
+    g "..."
 
-#    "It's not totally surprising that Alice is coming to grips with this. She did, after all, lived a rather sheltered life and went to a sheltered school. Violence was basically unheard of in her world."
+    hide alice angry
+    show alice soft
 
-#    g "But what can we do to stop the violence? Can we ever live in a world where everyone understands each other?"
+    "It's not totally surprising that Alice is coming to grips with this. She did, after all, lived a rather sheltered life and went to a sheltered school. Violence was basically unheard of in her world."
 
-#    hide alice soft
+    g "But what can we do to stop the violence? Can we ever live in a world where everyone understands each other?"
 
-#    f "There might."
+    hide alice soft
 
-#    show alice soft
+    f "There might."
 
-#    g "Huh?"
+    show alice soft
 
-#    hide alice soft
+    g "Huh?"
 
-#    "A voice called out in response to Alice's question. The two of us looked around, searching for the origin of the voice."
+    hide alice soft
 
-    # if Reunion
+    "A voice called out in response to Alice's question. The two of us looked around, searching for the origin of the voice."
 
-    #    show bob neutral
+ if Reunion
 
-    #    d "Hey. Sorry I'm late."
+    show bob neutral
 
-    #    "Bob arrived. He dropped his belongings and sat down to catch his breath."
+    d "Hey. Sorry I'm late."
 
-    #    hide bob neutral
-    #    show alice neutral
+    "Bob arrived. He dropped his belongings and sat down to catch his breath."
 
-    #    g "No, I'm glad you're safe. Now we need to wait for Chris."
+    hide bob neutral
+    show alice neutral
 
-    #    hide alice neutral
-    #    show bob neutral
+    g "No, I'm glad you're safe. Now we need to wait for Chris."
 
-    #    d "...About that. Sorry, but Chris will not be meeting up with us anymore."
+    hide alice neutral
+    show bob neutral
 
+    d "...About that. Sorry, but Chris will not be meeting up with us anymore."
 
+    hide bob neutral
+    show alice neutral
+
+    g "What? Why?"
+
+    hide alice neutral
+    show bob neutral
+
+    
 
     pause
     return
