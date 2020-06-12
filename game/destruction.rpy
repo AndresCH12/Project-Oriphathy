@@ -501,6 +501,106 @@ label destruction_start:
 
     "Alice and I set aside our belongings and sat on the stairs to catch our breaths. It is now pouring."
 
+    "The city of Chernobog, once a city of grey, is now painted orange and black with smoke and fires. The occasional red can be seen splattered about."
+
+    "Bodies of the dead pile on top of each other. No one was spared, be it man, woman, or child."
+
+    "What was once considered a discriminate course of action has now turned into an indiscriminate form of murder. Anyone is now a viable target."
+
+    show alice neutral
+
+    g "I hope everyone else is okay. I hope Azazel is still going strong. The acting manager is really nice."
+
+    hide alice neutral
+
+    b "Yeah. I think he'll be able to handle himself."
+
+    show alice neutral
+    g "But even so, what Bob and Chris said last week. It ended up being true."
+
+    hide alice neutral
+    b "The talk about the Catastrophe?"
+
+    show alice neutral
+    g "Yes. Well, more specifically, the part about it being manmade. Catastrophes by nature are naturally forming. This one is not."
+
+    b "The rioters called themselves Reunion."
+
+    "Alice's eyes widened."
+
+    hide alice neutral
+    show alice angry
+
+    g "Reunion? That can't be right. Reunion had never acted out in violence. Are you sure you misheard?"
+
+    b "I wished I did."
+
+    "Alice grimaced for a moment."
+
+    hide alice neutral
+    show alice soft
+
+    g "Say. If they really do call themselves Reunion. If they really are the same as the movement and not simply using their name..."
+
+    #label current_dilema1:
+    #menu:
+    #    "Do you think what they are doing is right?":
+    #        b "Yes."
+    #        b "Reunion's voices fell to deaf ears, so this is the natural outcome."
+#
+#            g "...I suppose you're right. When words fail, action becomes the norm."
+#        else:
+#            b "No.":
+#                "Violence will always lead to more violence."
+#
+#            g "...I suppose you're right. Even if our voices can't be heard, we simply have to keep trying."
+
+#    g "But even so, this is just too cruel."
+
+#    b "Unfortunately, this is who we are. At the end of the day, violence is a universal language."
+
+#    hide alice soft
+#    show alice angry
+
+#    g "..."
+
+#    hide alice angry
+#    show alice soft
+
+#    "It's not totally surprising that Alice is coming to grips with this. She did, after all, lived a rather sheltered life and went to a sheltered school. Violence was basically unheard of in her world."
+
+#    g "But what can we do to stop the violence? Can we ever live in a world where everyone understands each other?"
+
+#    hide alice soft
+
+#    f "There might."
+
+#    show alice soft
+
+#    g "Huh?"
+
+#    hide alice soft
+
+#    "A voice called out in response to Alice's question. The two of us looked around, searching for the origin of the voice."
+
+    # if Reunion
+
+    #    show bob neutral
+
+    #    d "Hey. Sorry I'm late."
+
+    #    "Bob arrived. He dropped his belongings and sat down to catch his breath."
+
+    #    hide bob neutral
+    #    show alice neutral
+
+    #    g "No, I'm glad you're safe. Now we need to wait for Chris."
+
+    #    hide alice neutral
+    #    show bob neutral
+
+    #    d "...About that. Sorry, but Chris will not be meeting up with us anymore."
+
 
 
     pause
