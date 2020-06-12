@@ -414,17 +414,4 @@ label start:
 
     "...Maybe it won't be so bad, being an Infected."
 
-    menu:
-        "I decided to visit some of my friends.":
-
-            "(Visit Bob)":
-                jump Bob_backstory
-
-            "(Visit Alice)":
-                jump Alice_backstory
-
-            "(Visit Chris)":
-                jump Chris_backstory
-
-    
     jump destruction_start
