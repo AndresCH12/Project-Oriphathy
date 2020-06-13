@@ -1,6 +1,7 @@
 label Bob_backstory:
 
     scene room
+    with fade
 
     "Bob looks like he's grimancing over something."
 
@@ -27,24 +28,17 @@ label Bob_backstory:
     hide bob normal
 
     menu:
-        show bob cheer
-        d "Hah... Well, it's nothing. Don't worry about it.":
+        d "Hah... Well, it's nothing. Don't worry about it."
 
         "If you say so.":
-            hide bob cheer
             show bob normal
-
             d "Hmm."
 
-            hide bob normal
 
-        "Come on, tell me what you're really thinking."
-            hide bob cheer
-            show bob angry
-
+        "Come on, tell me what you're really thinking.":
+            show bob normal
             d "..."
 
-            hide bob angry
 
     show bob normal
 
@@ -59,7 +53,7 @@ label Bob_backstory:
     "Bob closed his eyes for a moment and took a deep breath."
 
     menu:
-        d "My story can be found in pretty much any history textbook. You could probably find at least a dozen like it.":
+        "My story can be found in pretty much any history textbook. You could probably find at least a dozen like it."
 
         "Well yeah...":
 
@@ -233,7 +227,7 @@ label Bob_backstory:
     d "Right"
 
     hide bob cheer
-    show bob neutral
+    show bob normal
 
     d "So? When Reunion gets back together, do you want to join me? We can put an end to the discrimination."
 
@@ -242,22 +236,22 @@ label Bob_backstory:
     d "Reunion is no more, right now. But I believe they will come back. They definitely will."
 
     menu:
-        b "It would definitely make me feel better if I have someone watching my back, though.":
+        b "It would definitely make me feel better if I have someone watching my back, though."
 
-            "Okay, I'm in!":
-                b "I definitely sympathize with you."
+        "Okay, I'm in!":
+            b "I definitely sympathize with you."
 
-                d "Awesome. I'm glad you agree with me."
+            d "Awesome. I'm glad you agree with me."
 
-            "Let me think about it a bit more, it is a big commitment"
-                b "I would like to keep my options open right now."
+        "Let me think about it a bit more, it is a big commitment":
+            b "I would like to keep my options open right now."
 
-                d "Sure, there's no rush."
+            d "Sure, there's no rush."
 
-            "I'm sorry."
-                b "Even though what happened to that old man was awful, I am a bit concerned about that message. So, I'll have to decline."
+        "I'm sorry.":
+            b "Even though what happened to that old man was awful, I am a bit concerned about that message. So, I'll have to decline."
 
-                d "That's too bad."
+            d "That's too bad."
 
     b "But thank you for telling me all of this."
 
@@ -267,4 +261,4 @@ label Bob_backstory:
 
     "Bob shrugged again. The two of us waved each other goodbye, and then walked our separate ways."
 
-    jump back_to_script
+    jump Backstory

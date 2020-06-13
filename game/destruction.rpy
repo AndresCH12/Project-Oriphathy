@@ -544,14 +544,16 @@ label destruction_start:
 
 label current_dilema1:
     menu:
-        "Do you think what they are doing is right?":
-            b "Yes."
+        "Do you think what they are doing is right?"
+
+        "Yes.":
             b "Reunion's voices fell to deaf ears, so this is the natural outcome."
 
             g "...I suppose you're right. When words fail, action becomes the norm."
-        else:
-            b "No.":
-                "Violence will always lead to more violence."
+
+        "No.":
+
+            b"Violence will always lead to more violence."
 
             g "...I suppose you're right. Even if our voices can't be heard, we simply have to keep trying."
             g "But even so, this is just too cruel."
@@ -582,33 +584,33 @@ label current_dilema1:
 
     "A voice called out in response to Alice's question. The two of us looked around, searching for the origin of the voice."
 
- if Reunion
+ # if Reunion
 
-    show bob neutral
+#    show bob neutral
 
-    d "Hey. Sorry I'm late."
+#    d "Hey. Sorry I'm late."
 
-    "Bob arrived. He dropped his belongings and sat down to catch his breath."
+#    "Bob arrived. He dropped his belongings and sat down to catch his breath."
 
-    hide bob neutral
-    show alice neutral
+#    hide bob neutral
+#    show alice neutral
 
-    g "No, I'm glad you're safe. Now we need to wait for Chris."
+#    g "No, I'm glad you're safe. Now we need to wait for Chris."
 
-    hide alice neutral
-    show bob neutral
+#    hide alice neutral
+#    show bob neutral
 
-    d "...About that. Sorry, but Chris will not be meeting up with us anymore."
+#    d "...About that. Sorry, but Chris will not be meeting up with us anymore."
 
-    hide bob neutral
-    show alice neutral
+#    hide bob neutral
+#    show alice neutral
 
-    g "What? Why?"
+#    g "What? Why?"
 
-    hide alice neutral
-    show bob neutral
+#    hide alice neutral
+#    show bob neutral
 
-    
 
-    pause
-    return
+
+#    pause
+#    return

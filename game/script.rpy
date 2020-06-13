@@ -3,16 +3,15 @@ default age = 22
 default gender = "Male"
 default reunion = 0
 default rhodesIsland = 0
-
 define a = Character("Doctor")
 define b = Character("[name]")
 define c = Character("Chris")
 define d = Character("Bob")
 define e = Character("Nurse")
-image alice neutral = im.Scale("alice neutral.png", 600, 700)
-image alice angry = im.Scale("alice angry.png", 600, 700)
-image alice cheer = im.Scale("alice cheer.png", 600, 700)
-image alice soft = im.Scale("alice soft.png", 600, 700)
+image alice angry = im.Scale("alice angry.png", 600, 600)
+image alice cheer = im.Scale("alice cheer.png", 600, 600)
+image alice neutral = im.Scale("alice neutral.png", 600, 600)
+image alice soft = im.Scale("alice soft.png", 600, 600)
 image doctor = im.Scale("Doctor.png", 700, 700)
 image mperson = im.Scale("Hellagur.png", 700, 700)
 image clinic = im.Scale("dark_light_clinic.jpg", 1368, 720)
@@ -414,17 +413,22 @@ label start:
 
     "...Maybe it won't be so bad, being an Infected."
 
+    label Backstory:
     menu:
-        "I decided to visit some of my friends.":
+        "I decided to visit some of my friends."
 
-            "(Visit Bob)":
-                jump Bob_backstory
+        "(Visit Bob)":
+            "lets visit Bob."
+            jump Bob_backstory
 
-            "(Visit Alice)":
-                jump Alice_backstory
+        "(Visit Alice)":
+            "lets visit Alice."
+            jump Alice_backstory
 
-            "(Visit Chris)":
-                jump Chris_backstory
+        "(Visit Chris)":
+            "lets visit Chris."
+            jump Chris_backstory
 
-    
-    jump destruction_start
+        "(Stay home.)":
+            "I think ill stay home today and get some sleep."
+            jump destruction_start

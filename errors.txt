@@ -2,38 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/destruction.rpy", line 552: expected menuitem
-    else:
-    ^
+File "game/script.rpy", line 421: expected statement.
+    "(Visit Bob)":
+                 ^
 
-File "game/destruction.rpy", line 610: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
-(Perhaps you left out a " at the end of the first line.)
-    g "Huh?
-    ^
-    
-        hide alice soft
-    
-        "A voice called out in response to Alice's question. The two of us looked around, searching for the origin of the voice."
-    
-        if Reunion
-    
-            show bob neutral
-    
-            d "Hey. Sorry I'm late."
-    
-            "Bob arrived. He dropped his belongings and sat down to catch his breath."
-    
-            hide bob neutral
-            show alice neutral
-    
-            g "No, I'm glad you're safe. Now we need to wait for Chris."
-    
-            hide alice neutral
-            show bob neutral
-    
-            d "...About that. Sorry, but Chris will not be meeting up with us anymore."
-    
-            "
+File "game/script.rpy", line 425: expected statement.
+    "(Visit Alice)":
+                   ^
+
+File "game/script.rpy", line 429: expected statement.
+    "(Visit Chris)":
+                   ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Jun 11 18:23:42 2020
+Fri Jun 12 17:04:52 2020
