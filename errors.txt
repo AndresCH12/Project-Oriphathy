@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 421: expected statement.
-    "(Visit Bob)":
-                 ^
-
-File "game/script.rpy", line 425: expected statement.
-    "(Visit Alice)":
-                   ^
-
-File "game/script.rpy", line 429: expected statement.
-    "(Visit Chris)":
-                   ^
+File "game/Chris.rpy", line 193: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Let me think about it a bit more."
+                                       ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri Jun 12 17:04:52 2020
+Fri Jun 12 19:55:25 2020

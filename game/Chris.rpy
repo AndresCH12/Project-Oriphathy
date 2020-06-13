@@ -190,7 +190,7 @@ label Chris_backstory:
 
             c "Great! I'll ask the acting manager for a recommendation for you too."
 
-        "Let me think about it a bit more."
+        "Let me think about it a bit more.":
             b "I'm not entirely sure if I want to continue as a merchant, anyway."
 
             c "I think you'll do fine, but okay. There's no need to rush."
