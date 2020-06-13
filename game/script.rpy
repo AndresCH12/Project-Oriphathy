@@ -3,6 +3,9 @@ default age = 22
 default gender = "Male"
 default reunion = 0
 default rhodesIsland = 0
+default Visit_Bob = False
+default Visit_Alice = False
+default Visit_Chris = False
 define a = Character("Doctor")
 define b = Character("[name]")
 define c = Character("Chris")
@@ -416,16 +419,18 @@ label start:
     label Backstory:
     menu:
         "I decided to visit some of my friends."
-
-        "(Visit Bob)":
+        "(Visit Bob)" if not Visit_Bob:
+            $ Visit_Bob = True
             "lets visit Bob."
             jump Bob_backstory
 
-        "(Visit Alice)":
+        "(Visit Alice)" if not Visit_Alice:
+            $ Visit_Alice = True
             "lets visit Alice."
             jump Alice_backstory
 
-        "(Visit Chris)":
+        "(Visit Chris)" if not Visit_Chris:
+            $ Visit_Chris = True
             "lets visit Chris."
             jump Chris_backstory
 

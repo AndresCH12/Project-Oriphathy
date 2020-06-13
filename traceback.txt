@@ -1,22 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 426, in script
-    jump Alice_backstory
-ScriptError: could not find label 'Alice_backstory'.
+  File "game/script.rpy", line 423, in script
+    "(Visit Bob)" if not Visit_Bob:
+  File "game/script.rpy", line 423, in <module>
+    "(Visit Bob)" if not Visit_Bob:
+NameError: name 'true' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 426, in script
-    jump Alice_backstory
-  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\ast.py", line 1697, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\script.py", line 898, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'Alice_backstory'.
+  File "game/script.rpy", line 423, in script
+    "(Visit Bob)" if not Visit_Bob:
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\ast.py", line 914, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 423, in <module>
+    "(Visit Bob)" if not Visit_Bob:
+NameError: name 'true' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 Project Oriphathy 1.0
-Fri Jun 12 19:09:46 2020
+Sat Jun 13 14:53:06 2020
