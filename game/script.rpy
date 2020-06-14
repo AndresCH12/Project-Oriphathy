@@ -1,39 +1,4 @@
-default name = "Protag"
-default age = 22
-default gender = "Male"
-default reunion = 0
-default rhodesIsland = 0
-default Visit_Bob = False
-default Visit_Alice = False
-default Visit_Chris = False
-define a = Character("Doctor")
-define b = Character("[name]")
-define c = Character("Chris")
-define d = Character("Bob")
-define e = Character("Nurse")
-image alice angry = im.Scale("alice angry.png", 600, 600)
-image alice cheer = im.Scale("alice cheer.png", 600, 600)
-image alice neutral = im.Scale("alice neutral.png", 600, 600)
-image alice soft = im.Scale("alice soft.png", 600, 600)
-image doctor = im.Scale("Doctor.png", 700, 700)
-image mperson = im.Scale("Hellagur.png", 700, 700)
-image clinic = im.Scale("dark_light_clinic.jpg", 1368, 720)
-image warehouse = im.Scale("Warehouse.jpg", 1368, 720)
-image dark alley = im.Scale("Dark alley.jpg", 1368, 720)
-image Vigilante = im.Scale("Vigilante.png", 700, 700)
-image rs = im.Scale("rs.png", 700, 700)
-image ug = im.Scale("ug.png", 700, 700)
-define f = Character ("???")
-define g = Character ("Alice")
-define h = Character ("Vigilante 1")
-define i = Character ("Viginalte 2")
-define j = Character ("Vigilante 3")
-define k = Character ("Reunion Soldier")
-define l = Character ("Rhodes Island Operator")
-define m = Character ("Ursus Guard 1")
-define n = Character ("Infected person")
-define o = Character ("Ursus Guard 2")
-label start:
+label intro:
 
     scene clinic
     with fade
@@ -106,7 +71,7 @@ label start:
         name = name.strip()
 
         if not name:
-            name = "Protag"
+            name = "Ren"
 
     a "Next patient, please."
 
@@ -373,7 +338,7 @@ label start:
 
     hide chris normal
     show alice neutral
-    g "Anything you want to eat in particular, Protag?"
+    g "Anything you want to eat in particular, [name]?"
 
     b "No, not really."
 
@@ -416,24 +381,6 @@ label start:
 
     "...Maybe it won't be so bad, being an Infected."
 
-    label Backstory:
-    menu:
-        "I decided to visit some of my friends."
-        "(Visit Bob)" if not Visit_Bob:
-            $ Visit_Bob = True
-            "lets visit Bob."
-            jump Bob_backstory
+    pause 1.0
 
-        "(Visit Alice)" if not Visit_Alice:
-            $ Visit_Alice = True
-            "lets visit Alice."
-            jump Alice_backstory
-
-        "(Visit Chris)" if not Visit_Chris:
-            $ Visit_Chris = True
-            "lets visit Chris."
-            jump Chris_backstory
-
-        "(Stay home.)":
-            "I think ill stay home today and get some sleep."
-            jump destruction_start
+    jump choicebranch

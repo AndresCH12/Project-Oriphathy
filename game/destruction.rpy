@@ -1,7 +1,5 @@
 label destruction_start:
 
-    "Before the Destruction"
-
     scene warehouse
     with fade
 
@@ -11,7 +9,8 @@ label destruction_start:
     g "..."
 
     "Alice looks distracted. She looks at the horizon with a dazed look."
-    "I turned towards Bob and Chris. They too look dazed."
+    "I turned towards Bob and Chris. Bob has a furled look on his face."
+    "Chris, on the other hand, seemed calm."
 
     b "Is something wrong?"
 
@@ -47,13 +46,15 @@ label destruction_start:
     d "In this case, it may be. Something about the air doesn't sit well with me."
 
     hide bob yikes
-    scene Catastrophe
+    scene cata
 
     "The Catastrophe."
     "Nicknamed as such to refer to various natural disasters occuring around the world."
     "It is believed that Catastrophes occur whenever Originium is found, almost as if they are connected."
     "Because these Catastrophes are unpredictable, certain technologies were created to adapt to such a situation."
     "For example, moving cities and attempts to predict these Catastrophes."
+
+    scene warehouse
 
     b "And you think the Catastrophe is going to happen here?"
 
@@ -124,6 +125,8 @@ label destruction_start:
     "But even so, the looming Catastrophe..."
     "Something about this one doesn't feel right. Natural. This one seems... manmade."
 
+    pause 1.0
+
     scene room
     with fade
 
@@ -141,7 +144,7 @@ label destruction_start:
     "I quietly left my room. I hope the next person who uses it will treat it well."
     "........."
 
-    scene Dark alley
+    scene alley
     with fade
 
     "Cloudy skies. Possible chance of rain at this time of day. This never bodes well. Even as a merchant, cloudy skies seem to represent a potential failed deal."
@@ -154,10 +157,12 @@ label destruction_start:
 
     "A thunderous roar caught me off guard. However, that roar was not directed at me."
     "I peeked from behind the wall, observing the situation."
-    "Apparently an Infected was spotted out on the streets. Looks like they were caught by people who look like witch hunters."
+    "Apparently an Infected was spotted out on the streets. Looks like they were caught by people who look like vigilantes."
     "The poor Infected was surrounded by these vigilantes. He looks terrified."
 
     show Vigilante
+    with fade
+
     h "Well well. What do we have here? A filthy Infected."
     i "And to what pleasure do we owe this rat?"
     j "Come now. Decency is far more than what this trash deserves."
@@ -174,7 +179,7 @@ label destruction_start:
 
     h "Huh? Hey, we asked you a question. What are you doing here?"
 
-    "One of the witch hunters approached the Infected with intimidation. The Infected instinctively backed away slowly."
+    "One of the vigilantes approached the Infected with intimidation. The Infected instinctively backed away slowly."
 
     j "Oh boy. For your own sake, you might want to answer him."
 
@@ -184,7 +189,7 @@ label destruction_start:
 
     n "H...hee..."
 
-    "The Infected is a nervous wreck. One of the witch hunter, clearly furious, stopped walking."
+    "The Infected is a nervous wreck. One of the vigilante, clearly furious, stopped walking."
 
     show Vigilante
 
@@ -203,9 +208,12 @@ label destruction_start:
 
     h "A newcomer, you say? I see. In that case, perhaps a proper education is in order, eh?"
 
-    "The witch hunter pounded his fists. Another cracked their knuckles."
+    "The vigilante clanged his metal rod at the ground. Another cracked their knuckles."
+
+    "All of them were sneering."
 
     hide Vigilante
+    with fade
 
     "As apparent it is to anyone, education here really means a physical beating."
 
@@ -216,6 +224,7 @@ label destruction_start:
     "I avert my eyes to the eventual horror and try to move quietly."
 
     show Vigilante
+    with fade
 
     i "...Who's there?"
 
@@ -243,7 +252,7 @@ label destruction_start:
 
     show Vigilante
 
-    j "We have you an order. Heed it. He doesn't like waiting, you know."
+    j "We gave you an order. Heed it. He doesn't like waiting, you know."
 
     hide Vigilante
 
@@ -253,7 +262,9 @@ label destruction_start:
 
     h "Ignorin' me? You have guts. Let's see how long that lasts... NOW!"
 
-    "Almost in an instant, the witch hunter turns and kicks the Infected in the face."
+    "Almost in an instant, the vigilante turns and slams the metal rod at the ground."
+
+    "It was clear he deliberately missed the Infected and simply wanted to show some sort of supremacy."
 
     h "Yeah, now I'm pissed. You little shits have no right to even exist. Why trash like you continue to infest our world is beyond me."
 
@@ -261,17 +272,19 @@ label destruction_start:
 
     hide Vigilante
 
-    "This witch hunter looks crazed. Bloodthirsty, even. Almost as though such things come naturally."
+    "This vigilante looks crazed. Bloodthirsty, even. Almost as though such things come naturally."
 
-    "The witch hunter continues to kick the Infected. The Infected initially cried out, but then stopped."
+    "The vigilante has begun to kick the Infected. The Infected initially cried out, but then stopped."
 
-    "The other witch hunters looked in glee, as if entertained by the spectacle."
+    "The other vigilantes looked in glee, as if entertained by the spectacle."
 
     "Some of them point and laugh. Some looked amused. A couple are even egging each other on. One decided to join in on the fun."
 
     "And one decided to focus on me. Still watching my actions."
 
     "Hah... could this day be any worse...?"
+
+    pause 1.0
 
     show Vigilante
 
@@ -283,22 +296,21 @@ label destruction_start:
 
     hide Vigilante
 
-    "The witch hunter beating the Infected stopped and looked around. The other witch hunters also looked confused."
+    "The vigilante beating the Infected stopped and looked around. The other vigilantes also looked confused."
 
     "The Infected, meanwhile, lie motionless."
 
-    "The situation does not feel right, I concentrated on the smell one of the witch hunters mentioned."
-
-    scene chaos city
-    with fade
+    "The situation does not feel right, I concentrated on the smell one of the vigilantes mentioned."
 
     "There's no doubt. It's gunpowder. Fireworks, probably. But this smell..."
+
+    with vpunch
 
     "Before I could finish that thought, a deafening sound cried out. An explosion."
 
     "A nearby building suddenly bursted into flames. Glass shards scattered in an instant."
 
-    "The witch hunters flinched at the sudden noise."
+    "The vigilantes flinched at the sudden noise."
 
     "Several more buildings also bursted into flames. Now screaming can be heard in the distance."
 
@@ -308,8 +320,9 @@ label destruction_start:
 
     hide Vigilante
 
-    "The other witch hunters and I looked in the direction being pointed. Rows of masked people in white marched down the streets. Who are they?"
+    "The other vigilantes and I looked in the direction being pointed. Rows of masked people in white marched down the streets. Who are they?"
 
+    scene chaos city
     show rs
     with dissolve
 
@@ -326,7 +339,7 @@ label destruction_start:
 
     hide rs
 
-    "The masked men continued marching, ignoring the witch hunter. Behind them, flames rushed across the horizon."
+    "The masked men continued marching, ignoring the vigilante. Behind them, flames rushed across the horizon."
     "The Vigilante grew furious. Clenching his fists, he slowly approached the masked people."
 
     show Vigilante
@@ -334,7 +347,7 @@ label destruction_start:
     h "Hey, answer me! What the hell do you think you're doing, you damn freaks?"
 
     hide Vigilante
-    "Apparently this witch hunter doesn't realize those masked people... are armed. The other witch hunters appear to have noticed, though."
+    "Apparently this vigilante doesn't realize those masked people... are armed. The other vigilantes appear to have noticed, though."
 
     show Vigilante
     i "H-hey... they look dangerous. Shouldn't we, you know, back off and call for help?"
@@ -347,13 +360,13 @@ label destruction_start:
 
     hide Vigilante
 
-    "Well he is awefully honest."
+    "Someone's honest."
 
     "Almost in reaction to those words, one of the masked people held up an object."
 
     "It's rather difficult to see from a distance, but this masked person is clearly holding a pistol."
 
-    "The masked person opened fire and missed at the witch hunter."
+    "The masked person opened fire and missed at the vigilante. Probably on purpose."
 
     show Vigilante
 
@@ -374,11 +387,7 @@ label destruction_start:
 
     k "...!"
 
-    hide rs
-
     "The Vigilante rushed towards the masked people. One of them walked forward in response to the challenge."
-
-    show rs
 
     k "You who terrorize the Infected. Know your place, scum."
 
@@ -392,14 +401,13 @@ label destruction_start:
 
     k "..."
 
-    hide rs
-
     "Two more masked people stepped forward. The three of them branished what appears to be a sword."
 
-    "The witch hunter, clearly not caring, continued to rush forward. Eventually he made contact with the masked people, to which he suddenly punched one of them."
+    "The vigilante, clearly not caring, continued to rush forward. Eventually he made contact with the masked people, to which he suddenly punched one of them."
 
-    "The masked person did not flinch. Actually, it was the Vigilante who flinched. The witch hunter backed off, shocked."
+    "The masked person did not flinch. Actually, it was the Vigilante who flinched. The vigilante backed off, shocked."
 
+    hide rs
     show Vigilante
 
     h "The hell?"
@@ -409,10 +417,9 @@ label destruction_start:
 
     k "For the crimes of assault against the Infected, we hereby grant you death."
 
+    "The masked person swung their sword at the vigilante, hitting his left shoulder. The vigilante cried in pain, clenching his left shoulder while maintaining distance."
+
     hide rs
-
-    "The masked person swung their sword at the witch hunter, hitting his left shoulder. The witch hunter cried in pain, clenching his left shoulder while maintaining distance."
-
     show Vigilante
 
     h "Gah! That hurt, you damn freaks!"
@@ -421,9 +428,9 @@ label destruction_start:
 
     f "Hey! You over there!"
 
-    "Several soldiers appeared. Clad in black armor and a large shield, several rushed towards the witch hunter."
+    "Several soldiers appeared. Clad in black armor and a large shield, several rushed towards the vigilante."
 
-    show Ursus Guard
+    show ug
     with dissolve
 
     m "Civilians, get to safety."
@@ -434,14 +441,14 @@ label destruction_start:
 
     o "You will regret stepping foot onto Chernobog. On my honor as an Ursus, you will be stopped here."
 
-    hide Ursus Guard
+    hide ug
     show rs
 
-    k "Very well. For the crime of conspiring to torture the Infected, we sentence you to death."
+    k "Very well. For the crime of conspiring to torture the Infected, we hereby grant you death."
 
     hide rs
 
-    "The masked people and Ursus Guards began clashing. The witch hunters, save for the injured one, have already fled."
+    "The masked people and Ursus Guards began clashing. The vigilantes, save for the injured one, have already fled."
 
     "The Infected person still remain motionless."
 
@@ -453,7 +460,8 @@ label destruction_start:
 
     "In any case, it is definitely not safe here. I need to find the others and let them know what's going on."
 
-    scene city street
+    scene street
+    with fade
 
     "I rushed down the alleyway, taking glances towards the streets whenever possible."
 
@@ -488,6 +496,9 @@ label destruction_start:
     b "Right."
 
     hide alice neutral
+
+    scene alley
+    with fade
 
     "Alice and I continued down the alleyway, still avoiding the fighting. Fortunately, our intended destination is not very far, and the fighting also has not caught up yet. However, neither Bob nor Chris were there."
 
@@ -549,14 +560,23 @@ label current_dilema1:
         "Yes.":
             b "Reunion's voices fell to deaf ears, so this is the natural outcome."
 
+            b "When you suppress the voices of a group of people, and if they are determined enough, they will find a way to be heard."
+
+            b "What we're seeing here is the result of that."
+
             g "...I suppose you're right. When words fail, action becomes the norm."
 
         "No.":
 
-            b"Violence will always lead to more violence."
+            b "Violence will always lead to more violence."
+
+            b "Being suppressed isn't acceptable. But resorting to violence will not have the effect you want."
+
+            b "Turning to violence will simply make people think you would resort to terrorism."
 
             g "...I suppose you're right. Even if our voices can't be heard, we simply have to keep trying."
-            g "But even so, this is just too cruel."
+
+    g "But even so, this is just too cruel."
 
     b "Unfortunately, this is who we are. At the end of the day, violence is a universal language."
 

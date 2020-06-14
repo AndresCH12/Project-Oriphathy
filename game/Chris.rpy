@@ -64,8 +64,6 @@ label Chris_backstory:
     scene black
     with fade
 
-    "(Flashback)"
-
     show chris neutral
 
     c "Like I said, it's an industrial city. It's one of the many cities dedicated to research and production of Originium-related products."
@@ -148,13 +146,12 @@ label Chris_backstory:
 
     c "Well, that's probably easier said than done. If it were possible, I would imagine Reunion would have done it."
 
-    c "Instead, I sought out clinics speciaiizing in Oripathy. Azazel. And thankfully, they have allowed me to work part time as an intern."
+    c "Instead, I sought out clinics speciaiizing in Oripathy. Places like Azazel. And thankfully, they have allowed me to work part time as an intern."
 
     c "The acting manager also mentioned a Rhodes Island. Apparently it's another pharmaceudical company that consists of Infected and non-Infected."
 
     hide chris neutral
-
-    "(End flashback)"
+    with fade
 
     scene room
     with fade
@@ -183,12 +180,14 @@ label Chris_backstory:
     b "Me?"
 
     menu:
-        "Well, who else? What do you say?"
+        c "Well, who else? What do you say?"
 
         "I'm flattered you think that.":
             b "If you think my skills would help, then I'm in."
 
             c "Great! I'll ask the acting manager for a recommendation for you too."
+
+            $ rhodesIsland += 1
 
         "Let me think about it a bit more.":
             b "I'm not entirely sure if I want to continue as a merchant, anyway."
@@ -200,6 +199,8 @@ label Chris_backstory:
 
             c "Coming from someone who does business with Azazel, that's not convincing at all. But, if you say so."
 
+            $ reunion += 1
+
     c "Thanks for hearing me out, though. I rarely get a chance to talk about my hometown."
 
     b "No, no. Thank you for the tea. It was a very interesting story."
@@ -209,19 +210,5 @@ label Chris_backstory:
     hide chris happy
 
     "I thanked Chris again before leaving his room."
-
-    jump Backstory
-
-
-
-
-
-
-
-
-
-
-
-
 
     jump Backstory

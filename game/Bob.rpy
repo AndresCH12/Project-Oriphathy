@@ -25,20 +25,14 @@ label Bob_backstory:
 
     b "That's kind of unexpected of you. Why?"
 
-    hide bob normal
-
     menu:
         d "Hah... Well, it's nothing. Don't worry about it."
 
         "If you say so.":
-            show bob normal
-            d "Hmm."
-
+            pass
 
         "Come on, tell me what you're really thinking.":
-            show bob normal
-            d "..."
-
+            pass
 
     show bob normal
 
@@ -75,9 +69,8 @@ label Bob_backstory:
     d "This is a simple story of a dumb kid who didn't know any better."
     hide bob normal
 
-    "(Flashback)"
-
-    scene black_screen
+    scene black
+    with fade
 
     show bob normal
 
@@ -135,15 +128,15 @@ label Bob_backstory:
 
     hide bob normal
 
-    "Now you know the truth of this world. The truth of those deemed the Infected. Our fates have been decided the moment we became like this."
+    "Old Man" "Now you know the truth of this world. The truth of those deemed the Infected. Our fates have been decided the moment we became like this."
 
-    "But I do not regret anything. Chatting with you is perhaps the greatest joy in whatever little life I have left."
+    "Old Man" "But I do not regret anything. Chatting with you is perhaps the greatest joy in whatever little life I have left."
 
-    "I ask of you now one simple thing: to forget about me. To live on as though we have never met."
-
-    "The kid cried, of course. Saying stuff like 'No! I don't want to!' or 'Why can't we keep talking like this?'"
+    "Old Man" "I ask of you now one simple thing: to forget about me. To live on as though we have never met."
 
     show bob normal
+
+    d "The kid cried, of course. Saying stuff like 'No! I don't want to!' or 'Why can't we keep talking like this?'"
 
     d "But the old man stayed silent, only shaking his head slowly."
 
@@ -155,23 +148,31 @@ label Bob_backstory:
 
     d "And because the kid disobeyed them, the kid would be grounded for a month."
 
+    d "Punishment for defying their parents. Punishment for getting close to the Infected."
+
+    d "A life lesson."
+
     d "But the entire time, the one thing that kid could think about was why someone as kind as that old man deserved what he got."
 
-    d "Silly, right? Become an Infected, get beaten to death. Ludicrous world."
+    d "Silly, right? You are systematically murdered for contracting a disease that is not your fault. Ludicrous world."
+
+    "Bob took a deep breath before continuing."
 
     d "Several years passed. This kid learns of the Reunion movement. It was a movement organized to protest against inhumane treatment towards the Infected."
 
-    d "Naturally, the kid, now grown up, decided to join the protest."
+    d "Naturally, the kid, now grown up, decided to join the protest. He could not forget the old man no matter what, after all."
 
     d "And like many protests, they end up violent because of some opportunists who decided to cause trouble and point the blame."
 
     d "An explosion rocked the city hall. By sheer coincidence, that was very close to Reunion's rally."
 
-    d "And of course, the blame follows. Reunion was considered a group of terrorists who uses violence under the pretext of peace."
+    d "And of course, the blame follows. Because it happened near the rally, people instantly jump to the conclusion that Reunion was behind it."
 
-    d "Moreso because the bomb was made of Originium."
+    d "Overnight, Reunion was considered a group of terrorists who uses violence under the pretext of peace."
 
-    d "The vigilantes used the bomb attack as justification to go after any Reunion supporters."
+    d "The bomb being made of Originium certainly did not help to argue against that."
+
+    d "As the result, the vigilantes used the bomb attack as justification to go after any Reunion supporters."
 
     d "When Reunion held another rally inside an office building, another bomb went off. The building collapsed."
 
@@ -181,11 +182,45 @@ label Bob_backstory:
 
     d "The bomb that went off that day had a special characteristic. It was the type that corrodes metal and weakens cement."
 
-    d "And you know that anyone with prolonged exposure to Originium is at risk of becoming an Infected."
+    d "That bomb was designed specifically to destroy even the heaviest of fortifications. And it was used on a civilian building."
 
-    d "And guess who was among them. Yep. That kid."
+    menu:
+        "That's horrible...":
 
-    d "Thankfully, injuries are minor. Unfortunately, the kid is also an Infected now."
+            b "It's really astonishing that anyone would even think of turning to violence to sabotage a peaceful message."
+
+            hide bob normal
+            show bob angry
+
+            d "Makes anyone's blood boil with anger."
+
+            d "Then again, you get idiots like them everywhere you look."
+
+        "Did they ever find out who was behind the bombing attack?":
+
+            b "That's clearly a crime. Did they ever find who was responsible for it?"
+
+            hide bob normal
+            show bob angry
+
+            d "Just being reminded of their 'findings' make my blood boil."
+
+            d "The official statement is that an Infected, acting independantly from Reunion, resorted to terrorism."
+
+            d "Everyone knew how much bull that was, though. Everyone knew it was actually a rogue vigilante that carried it out."
+
+            d "There were people who absolutely hated the Infected and devised a scheme to use terrorism to turn everyone against the Infected. That rogue was one of them."
+
+            d "It's almost ludicrous how well it worked."
+
+            d "And of course, no one said a thing."
+
+    hide bob angry
+    show bob normal
+
+    d "Guess who was among the survivors of that office building. Yep. That kid."
+
+    d "Thankfully, injuries are minor. Unfortunately, the kid is tested and confirmed to have Oripathy."
 
     d "As a result, the parents disowned the kid. Any questions towards them resulted in something like never knowing the kid or never giving birth to one."
 
@@ -206,8 +241,7 @@ label Bob_backstory:
     d "All this time, still holding the flames of Reunion, waiting for the day they return."
 
     hide bob normal
-
-    "(End Flashback)"
+    with fade
 
     scene room
     with fade
@@ -243,7 +277,9 @@ label Bob_backstory:
 
             d "Awesome. I'm glad you agree with me."
 
-        "Let me think about it a bit more, it is a big commitment":
+            $ reunion += 1
+
+        "Let me think about it a bit more. It is a big commitment.":
             b "I would like to keep my options open right now."
 
             d "Sure, there's no rush."
@@ -253,11 +289,13 @@ label Bob_backstory:
 
             d "That's too bad."
 
+            $ rhodesIsland += 1
+
     b "But thank you for telling me all of this."
 
     d "Yeah, sure. Honestly, being reminded of that is painful."
 
-    hide bob neutral
+    hide bob normal
 
     "Bob shrugged again. The two of us waved each other goodbye, and then walked our separate ways."
 
