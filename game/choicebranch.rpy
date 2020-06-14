@@ -56,9 +56,7 @@ label choicebranch:
             $ Visit_Alice = True
             "I wonder if Alice found any interesting novels lately..."
 
-            "Not implemented yet. Jumping back to Backstory~"
-            # jump Alice_backstory
-            jump Backstory
+            jump Alice_backstory
 
         "(Visit Chris)" if not Visit_Chris:
             $ Visit_Chris = True

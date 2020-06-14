@@ -1,6 +1,6 @@
 label Bob_backstory:
 
-    scene room
+    scene warehouse
     with fade
 
     "Bob looks like he's grimancing over something."
@@ -298,5 +298,16 @@ label Bob_backstory:
     hide bob normal
 
     "Bob shrugged again. The two of us waved each other goodbye, and then walked our separate ways."
+
+    pause 1.0
+
+    show street
+    with fade
+
+    "........."
+    "......"
+    "..."
+
+    "Another week passed. The passing was uneventful."
 
     jump Backstory

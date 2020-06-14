@@ -211,4 +211,19 @@ label Chris_backstory:
 
     "I thanked Chris again before leaving his room."
 
+    c "Where did this come from? Well, whatever."
+
+    "Looks like Chris is going to be cleaning up for a while yet."
+
+    pause 1.0
+
+    show street
+    with fade
+
+    "........."
+    "......"
+    "..."
+
+    "Another week passed. The passing was uneventful."
+
     jump Backstory
