@@ -36,6 +36,7 @@ image mperson = im.Scale("Hellagur.png", 700, 700)
 image rs = im.Scale("rs.png", 900, 700)             # Reunion soldier
 image ug = im.Scale("ug.png", 900, 700)             # Ursus Guard
 image Vigilante = im.Scale("Vigilante.png", 500, 500)
+image rio = im.Scale("rio.png", 900, 700)
 
 
 # Images scenary

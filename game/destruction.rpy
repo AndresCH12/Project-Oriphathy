@@ -605,9 +605,9 @@ label current_dilema1:
 
     "A voice called out in response to Alice's question. The two of us looked around, searching for the origin of the voice."
 
-    if reunion > max(rhodesIsland):
+    if reunion > rhodesIsland:
 
-        show bob neutral
+        show bob normal
 
         d "Hey. Sorry I'm late."
 
@@ -745,11 +745,13 @@ label current_dilema1:
 
         d "Is this the camp for Reunion? We would like to join."
 
+        hide bob yikes
         show rs
         k "Join? You?"
 
         "The soldiers examined us questioningly. One of them nodded."
-        "Well, alright. I don't think there will be any issues in at least letting you apply. Go on ahead."
+
+        k "Well, alright. I don't think there will be any issues in at least letting you apply. Go on ahead."
         hide rs
 
         "The soldier allowed us entry to their camp."
@@ -871,7 +873,7 @@ label current_dilema1:
 
         return
 
-    elif rhodesIsland > max(reunion):
+    else:
 
         show chris neutral
 
@@ -895,7 +897,7 @@ label current_dilema1:
         g "What? Why?"
 
         hide alice neutral
-        show chris angry
+        show chris pissed
 
         c "We had an argument a couple days ago."
 
@@ -903,7 +905,7 @@ label current_dilema1:
 
         c "Bob believed that words are not enough. He never believed in violence, but he stated that historically some changes were brought about by violence. Today is probably that."
 
-        hide chris angry
+        hide chris pissed
         show alice neutral
 
         g "..."
@@ -950,8 +952,13 @@ label current_dilema1:
 
         hide chris neutral
 
-        "The three of us gathered our belongings once we were rested enough. With me leading the way, the three of us kept crossing through alleyways and streets, avoiding as much of the fighting as we could. Evidently, we could not avoid seeing the escalation of violence."
-        "The senseless killings continue. It looks like things are turning out unfavorably for the Ursus Guards. Though better trained and better armed, the Ursus Guards are horribly outnumbered. Already spread thin, it's taking the Ursus Guards everything they have just to prevent the rioters focused towards them."
+        "The three of us gathered our belongings once we were rested enough."
+        "With me leading the way, the three of us kept crossing through alleyways and streets, avoiding as much of the fighting as we could."
+        "Evidently, we could not avoid seeing the escalation of violence."
+        "The senseless killings continue."
+        "It looks like things are turning out unfavorably for the Ursus Guards."
+        "Though better trained and better armed, the Ursus Guards are horribly outnumbered."
+        "Already spread thin, it's taking the Ursus Guards everything they have just to prevent the rioters focused towards them."
 
         show chris neutral
 
@@ -1085,7 +1092,7 @@ label current_dilema1:
                     if not argument:
                             argument = "I am unsure of whether this path will bring us joy but, I will fight for what i think is right for the infected."
 
-                a "That makes sense"
+                a "That makes sense."
 
         a "Alright. Welcome to Rhodes Island."
 
@@ -1108,7 +1115,8 @@ label current_dilema1:
         hide alice soft
         show doctor
 
-        a "Right now? We will assign the three of you to a room where you will rest. The thing is, we medics already have our hands full trying to treat everyone, so we can't do any medical examinations for the new recruits. And I am merely tasked with telling them what I have told you."
+        a "Right now? We will assign the three of you to a room where you will rest."
+        a "The thing is, we medics already have our hands full trying to treat everyone, so we can't do any medical examinations for the new recruits. And I am merely tasked with telling them what I have told you."
         a "Besides, even without a medical exam I can already tell you three are exhausted. Did you run all the way to us from the city of Chernobog?"
         a "This will also give you a chance to decide if Rhodes Island is really the right path for you."
 
