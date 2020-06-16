@@ -5,6 +5,7 @@ default rhodesIsland = 0
 default Visit_Bob = False
 default Visit_Alice = False
 default Visit_Chris = False
+default argument = "I am unsure of whether this path will bring us joy but, I will fight for what i think is right for the infected."
 
 
 # Character name replacer variables

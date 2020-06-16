@@ -110,13 +110,13 @@ label intro:
         "How are you feeling right now?"
 
         "(Answer Normally).":
-
+                $ rhodesIsland += 1
                 b "I feel fine"
 
                 a "Hmmm."
 
         "(Answer sarcastically).":
-
+                $ reunion += 1
                 b "To what? The fact that I am an Infected?"
 
                 a "..."

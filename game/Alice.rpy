@@ -229,6 +229,9 @@ label Alice_backstory:
 
     "A soft wind brushed against my face."
 
+    hide alice soft
+    with fade
+
     pause 1.0
 
     show street
