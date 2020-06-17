@@ -20,12 +20,12 @@ A visual novel, often abbreviated as VN, is an interactive literary genre, which
 ## Features
 ---
 1. Player input
+![Player input](https://github.com/ACholberton/Project-Oriphathy/blob/master/game/images/Player%20input%20option.png)
 
 
+2. Player options
+![Player options](https://github.com/ACholberton/Project-Oriphathy/blob/master/game/images/Player%20options.png)
 
-2. player options
 
-
-
-3. save your game.
-
+3. Save your game.
+![save the game](https://github.com/ACholberton/Project-Oriphathy/blob/master/game/images/Save%20menu.png)
