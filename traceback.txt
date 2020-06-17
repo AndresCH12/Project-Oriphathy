@@ -1,77 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'Doctor.jpg'>:
-  File "game/script.rpy", line 17, in script
-    with dissolve
-IOError: Couldn't find file 'Doctor.jpg'.
+While running game code:
+  File "game/destruction.rpy", line 608, in script
+    if reunion > max(rhodesIsland):
+  File "game/destruction.rpy", line 608, in <module>
+    if reunion > max(rhodesIsland):
+TypeError: 'int' object is not iterable
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 17, in script
-    with dissolve
-  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\ast.py", line 1389, in execute
-    renpy.exports.with_statement(trans, paired)
-  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\exports.py", line 1601, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 2251, in do_with
-    clear=clear)
-  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 2702, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 3194, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\core.py", line 2094, in draw_screen
-    renpy.config.screen_height,
-  File "renpy/display/render.pyx", line 490, in renpy.display.render.render_screen (gen\renpy.display.render.c:6805)
-    rv = render(root, width, height, st, st)
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\transition.py", line 361, in render
-    top = render(self.new_widget, width, height, st, at)
-  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\image.py", line 500, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\image.py", line 306, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
-    rv = d.render(widtho, heighto, st, at)
-  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\im.py", line 583, in render
-    return cache.get(self, render=True)
-  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\im.py", line 266, in get
-    surf = image.load()
-  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\display\im.py", line 628, in load
-    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
-  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\loader.py", line 576, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'Doctor.jpg'.
+  File "game/destruction.rpy", line 608, in script
+    if reunion > max(rhodesIsland):
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\ast.py", line 1832, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\python.py", line 2059, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\acheu\OneDrive\Documents\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/destruction.rpy", line 608, in <module>
+    if reunion > max(rhodesIsland):
+TypeError: 'int' object is not iterable
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 Project Oriphathy 1.0
-Sun Jun 07 18:50:41 2020
+Tue Jun 16 14:35:23 2020
