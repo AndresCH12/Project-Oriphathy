@@ -60,8 +60,12 @@ label Alice_backstory:
 
     g "But if you insist..."
 
+    hide alice soft
+
     show black
     with fade
+
+    show alice neutral
 
     g "I grew up in a desert town. It wasn't a very large town, and there weren't very many people."
 
@@ -71,7 +75,7 @@ label Alice_backstory:
 
     g "Like money. We do get travelling merchants from time to time, though. Merchants like you."
 
-    g "But fsometimes we would need to venture out to gather supplies for ourselves."
+    g "But sometimes we would need to venture out to gather supplies for ourselves."
 
     g "Danger is everywhere, too. Many of the townsfolk ended up becoming hunters."
 
