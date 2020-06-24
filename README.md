@@ -13,7 +13,7 @@ A visual novel, often abbreviated as VN, is an interactive literary genre, which
 
 2. download the packages from [here](https://drive.google.com/drive/folders/1awMF4-gnQ5z7wN-di5zXDaB36Ho0pO1C?usp=sharing)
 
-3. Enjoy the game
+3. Open the application to start the game.
 
 
 
