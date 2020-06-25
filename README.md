@@ -1,11 +1,9 @@
-# Project Oriphaty(Downfall)
-
-
-## Visual Novel Game Project
+# Project Oripathy
+A visual Novel Game Project
 ---
 
 ## What is a Visual Novel?
-A visual novel, often abbreviated as VN, is an interactive literary genre, which originated in Japan, featuring text-based story with narrative style of literature and interactivity aided by static or sprite-based visuals, most often using anime-style art or occasionally live-action stills.
+A visual novel, often abbreviated as VN, is an interactive literary genre originating in Japan. It features a text-based story with a narrative style of literature and interactivity aided by static or sprite-based visuals, most often using anime-style art or occasionally live-action stills.
 
 ## What is Project Oripathy?
 Project Oripathy is a visual novel fangame based on the existing mobile game Arknights. It tells a story loosely based on the events of Arknights, though no knowledge of Arknights or the story behind it is needed as any relevant terms are explained in the game.
@@ -19,7 +17,7 @@ Your actions have consequences. Will you own up to your choices, or push them aw
 
 ## How to install
 ---
-1. This project uses the Renpy Engine for its deployment. You can download Ren'Py [here](https://www.renpy.org/) (optional. This is not required to run Project Oripathy)
+1. This project uses the Ren'Py Engine for its deployment. You can download Ren'Py [here](https://www.renpy.org/) (optional. This is not required to run Project Oripathy)
 
 2. Download Project Oripathy [here](https://drive.google.com/drive/folders/1UOehpLIlxrk7OsFbirRcM1FGISGj-h_J?usp=sharing)
 
@@ -57,3 +55,11 @@ Project Oripathy is under no license. It is open source.
 [Andres](https://howtols.blogspot.com/2020/06/project-oriphaty-project-oriphaty-is.html)
 
 [Anthony](https://alouievmd180.wordpress.com/2020/06/24/project-oripathy-closing-thoughts-and-the-future/)
+
+## Thanks
+Ren'Py, for without their engine this project would not have been possible
+Hypergryph/Yostar, for without creating and publishing Arknights this project would not have been possible
+The Arknights community, for the countless fanmade content being produced which inspired us to do the same
+Holberton School, for equipping us with the programming knowledge necessary to create this project
+...
+And you, for reading and downloading Project Oripathy, the cumulation of our time spent at Holberton School
