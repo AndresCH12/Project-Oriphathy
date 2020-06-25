@@ -32,6 +32,13 @@ A visual novel, often abbreviated as VN, is an interactive literary genre, which
 
 
 ## Authors
-[Andres Cheung] 
+[Andres Cheung](https://www.linkedin.com/in/andres-cheung-768802146/)
 
-[Anthony Louie]
+[Anthony Louie](https://www.linkedin.com/in/anthony-louie-903480192/)
+
+
+## Blogpost
+
+[Andres](https://howtols.blogspot.com/2020/06/project-oriphaty-project-oriphaty-is.html)
+
+[Anthony](https://alouievmd180.wordpress.com/2020/06/24/project-oripathy-closing-thoughts-and-the-future/)
