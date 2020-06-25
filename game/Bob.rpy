@@ -248,7 +248,7 @@ label Bob_backstory:
     hide bob normal
     with fade
 
-    scene room
+    scene warehouse
     with fade
     show bob normal
 
