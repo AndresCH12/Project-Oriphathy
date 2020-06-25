@@ -29,3 +29,9 @@ A visual novel, often abbreviated as VN, is an interactive literary genre, which
 
 3. Save your game.
 ![save the game](https://github.com/ACholberton/Project-Oriphathy/blob/master/game/images/Save%20menu.png)
+
+
+## Authors
+[Andres Cheung] 
+
+[Anthony Louie]
