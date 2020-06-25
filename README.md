@@ -1,6 +1,4 @@
 # Project Oripathy
-A visual Novel Game Project
----
 
 ## What is a Visual Novel?
 A visual novel, often abbreviated as VN, is an interactive literary genre originating in Japan. It features a text-based story with a narrative style of literature and interactivity aided by static or sprite-based visuals, most often using anime-style art or occasionally live-action stills.
@@ -16,7 +14,6 @@ As stated above, Project Oripathy is based on Arknights. As fellow fans of the m
 Your actions have consequences. Will you own up to your choices, or push them away?
 
 ## How to install
----
 1. This project uses the Ren'Py Engine for its deployment. You can download Ren'Py [here](https://www.renpy.org/) (optional. This is not required to run Project Oripathy)
 
 2. Download Project Oripathy [here](https://drive.google.com/drive/folders/1UOehpLIlxrk7OsFbirRcM1FGISGj-h_J?usp=sharing)
@@ -26,12 +23,10 @@ Your actions have consequences. Will you own up to your choices, or push them aw
 4. Open the application and double click the exe file to start the game.
 
 ## License
----
 Project Oripathy is under no license. It is open source.
 
 
 ## Features
----
 1. Player input
 ![Player input](https://github.com/ACholberton/Project-Oriphathy/blob/master/game/images/Player%20input%20option.png)
 
