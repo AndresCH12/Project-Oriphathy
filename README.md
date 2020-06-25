@@ -21,7 +21,7 @@ Your actions have consequences. Will you own up to your choices, or push them aw
 ---
 1. This project uses the Renpy Engine for its deployment. You can download Ren'Py [here](https://www.renpy.org/) (optional. This is not required to run Project Oripathy)
 
-2. Download Project Oripathy [here](https://drive.google.com/drive/folders/1awMF4-gnQ5z7wN-di5zXDaB36Ho0pO1C?usp=sharing)
+2. Download Project Oripathy [here](https://drive.google.com/drive/folders/1UOehpLIlxrk7OsFbirRcM1FGISGj-h_J?usp=sharing)
 
 3. Open and extract the zip files using the extraction tool of your choice.
 
