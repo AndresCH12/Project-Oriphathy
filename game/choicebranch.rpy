@@ -1,3 +1,7 @@
+# This file will be called until all player choices have been exhausted at the very bottom
+# Once again, by making use of the jump and label tags
+# This entire file is a monologue by the player, so no name variables are used here
+
 label choicebranch:
 
     scene street
@@ -44,25 +48,31 @@ label choicebranch:
 
     "Well, this is a good time as any."
 
+    # After viewing a character backstory, we return here. All lines above this are only displayed once.
     label Backstory:
     menu:
         "Now then, what should I do?"
+
+        # Disappears after viewing this event
         "(Visit Bob)" if not Visit_Bob:
             $ Visit_Bob = True
             "I wonder if Bob is wandering around somewhere..."
             jump Bob_backstory
 
+        # Disappears after viewing this event
         "(Visit Alice)" if not Visit_Alice:
             $ Visit_Alice = True
             "I wonder if Alice found any interesting novels lately..."
-
             jump Alice_backstory
 
+        # Disappears after viewing this event
         "(Visit Chris)" if not Visit_Chris:
             $ Visit_Chris = True
             "I wonder if Chris scrounged up anything interesting lately..."
             jump Chris_backstory
 
+        # This option will only display if all variables are set to true
+        # By default, this is hidden
         "(Stay home.)" if Visit_Bob and Visit_Alice and Visit_Chris:
             "I think I'll stay home today and get some sleep."
             jump destruction_start
