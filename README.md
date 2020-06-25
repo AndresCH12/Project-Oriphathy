@@ -52,9 +52,9 @@ Project Oripathy is under no license. It is open source.
 [Anthony](https://alouievmd180.wordpress.com/2020/06/24/project-oripathy-closing-thoughts-and-the-future/)
 
 ## Thanks
-Ren'Py, for without their engine this project would not have been possible
-Hypergryph/Yostar, for without creating and publishing Arknights this project would not have been possible
-The Arknights community, for the countless fanmade content being produced which inspired us to do the same
-Holberton School, for equipping us with the programming knowledge necessary to create this project
-...
-And you, for reading and downloading Project Oripathy, the cumulation of our time spent at Holberton School
+- Ren'Py, for without their engine this project would not have been possible
+- Hypergryph/Yostar, for without creating and publishing Arknights this project would not have been possible
+- The Arknights community, for the countless fanmade content being produced which inspired us to do the same
+- Holberton School, for equipping us with the programming knowledge necessary to create this project
+- ...
+- And you, for reading and downloading Project Oripathy, the cumulation of our time spent at Holberton School
